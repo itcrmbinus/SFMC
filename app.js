@@ -9,10 +9,7 @@ var path        = require('path');
 var request     = require('request');
 var routes      = require('./routes');
 var activity    = require('./routes/activity');
-var $ = require('jquery');
 
-window.$ = $;
-window.jQuery = jQuery;
 var app = express();
 
 // Configure Express
