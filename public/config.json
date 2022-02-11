@@ -17,7 +17,7 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "it.crm.binus@gmail.com"
+                    "emailAddress": "{{Contact.Attribute.\"Test API\".EmailAddress}}"
                 }									
 			],
           "outArguments": [],
