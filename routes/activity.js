@@ -29,8 +29,8 @@ function logData(req) {
         secure: req.secure,
         originalUrl: req.originalUrl
     });
-    console.log("body: " + util.inspect(req.body));
-    console.log("headers: " + req.headers);
+    console.log("body: " + util.inspect(JSON.stringify(req.body)));
+    console.log("headers: " + JSON.stringify(req.headers));
     console.log("trailers: " + req.trailers);
     console.log("method: " + req.method);
     console.log("url: " + req.url);
