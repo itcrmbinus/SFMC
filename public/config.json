@@ -63,12 +63,19 @@
           "fullscreen": false
         }
     },
-    "schema": {
-        "arguments": {
-            "execute": {
-                "inArguments": [],
-                "outArguments": []
-            }
-        }
-    }
+   "schema": {
+		"arguments": {
+			"execute": {
+				"inArguments": [{
+					"myInArgument": {
+						"dataType": "<text>",
+						"isNullable": false,
+						"direction": "in"
+					}
+				}],
+				"outArguments": []
+			}
+		}
+	}
+
 }
