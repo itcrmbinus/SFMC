@@ -17,7 +17,7 @@
         "execute": {
            "inArguments":[
 				{
-                     "emailAddress": "{{Contact.Key}}"
+                     "myInArgument": "inArgument coming from iframe"
                 }									
 			],
           "outArguments": [],
