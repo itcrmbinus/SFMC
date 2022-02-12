@@ -87,7 +87,7 @@ exports.execute = function (req, res) {
         }
 
         // example: https://developer.salesforce.com/docs/atlas.en-us.noversion.mc-app-development.meta/mc-app-development/example-rest-activity.htm
-        let discountCode = getInArgument('emailAddress') || 'nothing';
+        let discountCode = getInArgument('myInArgument') || 'nothing';
 
       console.log('discount code:', discountCode);
     // example on how to decode JWT
