@@ -91,7 +91,7 @@ exports.execute = function (req, res) {
 
       console.log('discount code:', discountCode);
     // example on how to decode JWT
-    JWT(req.body, process.env.jwtSecret, (err, decoded) => {
+   /* JWT(req.body, process.env.jwtSecret, (err, decoded) => {
 
         // verification error -> unauthorized request
         if (err) {
@@ -103,14 +103,14 @@ exports.execute = function (req, res) {
             
             // decoded in arguments
             var decodedArgs = decoded.inArguments[0];
-            console.log(decodedArgs);
+            console.log(decodedArgs); */
             logData(req);
             res.send(200, 'Execute');
-        } else {
+        } /*else {
             console.error('inArguments invalid.');
             return res.status(400).end();
         }
-    });
+    });*/
 };
 
 
