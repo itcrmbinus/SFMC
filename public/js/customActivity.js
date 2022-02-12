@@ -71,7 +71,7 @@ define([
 
         payload['arguments'].execute.inArguments = [{
             "tokens": authTokens,
-            "emailAddress": "{{InteractionDefaults.Email}}"
+            "emailAddress": "{{InteractionDefaults.Email}}",
             "BinusianID" : "{{Contact.Attribute.\"Test API\".\"Binusian ID\"}}"
         }];
         
