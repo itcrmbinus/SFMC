@@ -17,7 +17,7 @@
         "execute": {
            "inArguments":[
 				{
-                     "emailAddress": "{{Contact.Attribute.\"Test API\".\"Binusian ID\"}}"
+                     "emailAddress": "{{Contact.Key}}"
                 }									
 			],
           "outArguments": [],
