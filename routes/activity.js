@@ -106,7 +106,7 @@ exports.execute = function (req, res) {
             console.log(decodedArgs); */
             logData(req);
             res.send(200, 'Execute');
-        } /*else {
+        /*} else {
             console.error('inArguments invalid.');
             return res.status(400).end();
         }
