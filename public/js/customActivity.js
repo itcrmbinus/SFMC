@@ -72,6 +72,7 @@ define([
         payload['arguments'].execute.inArguments = [{
             "tokens": authTokens,
             "emailAddress": "{{InteractionDefaults.Email}}"
+            "BinusianID" : "{{Contact.Attribute.\"Test API\".\"Binusian ID\"}}"
         }];
         
         payload['metaData'].isConfigured = true;
