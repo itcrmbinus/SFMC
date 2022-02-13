@@ -49,7 +49,10 @@ define([
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
                 
-              
+              if (key == 'TestField1') {
+                $('#testfield1').val(val)
+              }
+
             });
         });
 
