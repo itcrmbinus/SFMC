@@ -72,7 +72,6 @@ exports.save = function (req, res) {
  * POST Handler for /execute/ route of Activity.
  */
 exports.execute = function (req, res) {
-    res.send(500);
     // Find the in argument
         var getInArgument = (k) => {
           if (req.body && req.body.inArguments) {
