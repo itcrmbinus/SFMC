@@ -72,7 +72,8 @@ exports.save = function (req, res) {
  * POST Handler for /execute/ route of Activity.
  */
 exports.execute = function (req, res) {
- // Find the in argument
+    res.send(500);
+    // Find the in argument
         var getInArgument = (k) => {
           if (req.body && req.body.inArguments) {
             for (let i = 0; i < req.body.inArguments.length; i++) {
@@ -105,6 +106,7 @@ exports.execute = function (req, res) {
             var decodedArgs = decoded.inArguments[0];
             console.log(decodedArgs); 
             logData(req);
+
             res.send(200, 'Execute');
         } else {
             console.error('inArguments invalid.');
