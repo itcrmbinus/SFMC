@@ -23,6 +23,10 @@ define([
         connection.trigger('requestTokens');
         connection.trigger('requestEndpoints');
 
+        $('#testfield1').keyup(function() {
+            $('#message').html($(this).val())
+        })
+
     }
 
     function initialize(data) {
@@ -45,7 +49,10 @@ define([
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
                 
-              
+              if (key == 'TestField1') {
+                $('#testfield1').val(val)
+              }
+
             });
         });
 
@@ -72,7 +79,8 @@ define([
         payload['arguments'].execute.inArguments = [{
             "tokens": authTokens,
             "emailAddress": "{{InteractionDefaults.Email}}",
-            "BinusianID" : "{{Contact.Attribute.\"Test API\".\"Binusian ID\"}}"
+            "BinusianID" : "{{Contact.Attribute.\"Test API\".\"Binusian ID\"}}",
+            "TestField1" : $('#testfield1').val()
         }];
         
         payload['metaData'].isConfigured = true;
